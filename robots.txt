@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zxue286.github.io/zeyangxue.github.io/sitemap.xml
