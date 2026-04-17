@@ -277,6 +277,39 @@
     .paper-abstract summary:hover { text-decoration: underline; }
     .paper-abstract p { margin-top: 8px; }
 
+
+
+    /* ── PERSONAL ── */
+    .personal-note {
+      font-size: 18px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 24px;
+      max-width: 850px;
+    }
+    .personal-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+    .personal-gallery figure {
+      margin: 0;
+    }
+    .personal-gallery img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      display: block;
+      background: var(--bg-alt);
+    }
+    .personal-gallery figcaption {
+      margin-top: 10px;
+      font-size: 15px;
+      color: var(--text-secondary);
+    }
+
     /* ── TEACHING ── */
     .teaching-item {
       margin-bottom: 20px;
@@ -340,6 +373,12 @@
       .bio { text-align: left; }
       .hero-links { justify-content: flex-start; }
       .hero-info h1 { font-size: 32px; }
+      .personal-gallery {
+        grid-template-columns: 1fr;
+      }
+      .personal-gallery img {
+        height: 240px;
+      }
       .nav-links { display: none; }
       .nav-links.open {
         display: flex;
@@ -370,6 +409,7 @@
       <a href="#about">About</a>
       <a href="#research">Research</a>
       <a href="#teaching">Teaching</a>
+      <a href="#personal">Personal</a>
       <a href="#cv">CV</a>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -412,6 +452,9 @@
         as a finalist for the DRUID Steven Klepper Award and received a Best Paper Designation at the
         Academy of Management.
       </p>
+      <p>
+        In my free time, I enjoy deep sea fishing and spending time with my cat, though my cat refuses to eat fish.
+      </p>
 
     </div>
   </div>
@@ -421,11 +464,9 @@
 <section class="section" id="research">
   <h2 class="section-title">Research</h2>
 
-  <div class="paper-category">Job Market Paper</div>
-
   <div class="paper">
     <div class="paper-title">
-      Common Venture Capital Ownership and Startup Innovation 
+      Common Venture Capital Ownership and Startup Innovation <strong><em>(Job Market Paper)</em></strong>
     </div>
     <div class="paper-awards">
       Finalist, DRUID 2025 Steven Klepper Award for Best Young Scholar Paper
@@ -520,6 +561,27 @@
     <div class="course-detail">FE449: Corporate Financial Management &mdash; Fall 2023, Spring 2024</div>
   </div>
 
+</section>
+
+
+<!-- PERSONAL -->
+<section class="section" id="personal">
+  <h2 class="section-title">Outside of Research</h2>
+  <p class="personal-note">
+    Outside of research, I enjoy deep-sea fishing and spending time with my cat, who likes to sleep on my office chair and prevent me from working.
+  </p>
+
+  <div class="personal-gallery">
+    <figure>
+      <img src="assets/fishing.jpg" alt="Deep-sea fishing" />
+      <figcaption>Deep-sea fishing</figcaption>
+    </figure>
+
+    <figure>
+      <img src="assets/cat.jpg" alt="My cat" />
+      <figcaption>My cat sleeping on my office chair, preventing me from working</figcaption>
+    </figure>
+  </div>
 </section>
 
 <!-- CV -->
